@@ -1,0 +1,102 @@
+{
+  "n_reports": 30000,
+  "ade_gazetteer_size": 4508,
+  "drug_gazetteer_size": 227,
+  "top_ade_terms": [
+    [
+      "Headache",
+      4057
+    ],
+    [
+      "Pyrexia",
+      3658
+    ],
+    [
+      "Fatigue",
+      3601
+    ],
+    [
+      "Pain",
+      3091
+    ],
+    [
+      "Chills",
+      2873
+    ],
+    [
+      "Pain in extremity",
+      2423
+    ],
+    [
+      "Dizziness",
+      2233
+    ],
+    [
+      "Nausea",
+      2195
+    ],
+    [
+      "COVID-19",
+      2145
+    ],
+    [
+      "No adverse event",
+      1793
+    ],
+    [
+      "Injection site pain",
+      1676
+    ],
+    [
+      "Myalgia",
+      1637
+    ],
+    [
+      "Arthralgia",
+      1543
+    ],
+    [
+      "Dyspnoea",
+      1503
+    ],
+    [
+      "Rash",
+      1411
+    ],
+    [
+      "Product storage error",
+      1378
+    ],
+    [
+      "SARS-CoV-2 test positive",
+      1378
+    ],
+    [
+      "Expired product administered",
+      1282
+    ],
+    [
+      "Injection site erythema",
+      1232
+    ],
+    [
+      "Pruritus",
+      1156
+    ]
+  ],
+  "ner_backend": "biobert:d4data/biomedical-ner-all",
+  "severity_backend": "fallback-tfidf-logreg",
+  "severity_distribution": {
+    "Mild": 23797,
+    "Severe": 3912,
+    "Moderate": 936,
+    "Life-threatening": 833,
+    "Death": 522
+  },
+  "clustering_backend": {
+    "embedding_backend": "sentence-bert:all-MiniLM-L6-v2",
+    "cluster_backend": "HDBSCAN"
+  },
+  "n_clusters": 697,
+  "elapsed_seconds": 1590.2
+}
